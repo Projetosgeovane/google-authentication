@@ -16,6 +16,7 @@ export function SignIn() {
 
             const result = await signInWithPopup(auth, provider)
             setUser(result.user);
+            // console.log(user.photoURL);
 
         }
         catch (error) {
